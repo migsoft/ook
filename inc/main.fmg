@@ -1,0 +1,203 @@
+*HMGS-MINIGUI-IDE Two-Way Form Designer Generated Code
+*OPEN SOURCE PROJECT 2005-2016 Walter Formigoni http://sourceforge.net/projects/hmgs-minigui/
+
+DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Generator by MigSoft" ICON "FAVICON" MAIN
+
+     DEFINE LABEL Label_1
+            ROW    30
+            COL    40
+            WIDTH  100
+            HEIGHT 24
+            VALUE "xBase Compiler"
+     END LABEL  
+
+     DEFINE LABEL Label_2
+            ROW    60
+            COL    40
+            WIDTH  100
+            HEIGHT 24
+            VALUE "C Compiler"
+     END LABEL  
+
+     DEFINE LABEL Label_3
+            ROW    90
+            COL    40
+            WIDTH  100
+            HEIGHT 24
+            VALUE "GUI"
+     END LABEL  
+
+     DEFINE BUTTON Button_1
+            ROW    30
+            COL    480
+            WIDTH  28
+            HEIGHT 28
+            ACTION If ( !Empty( Folder := GetFolder() ) , main.text_1.Value := Folder , )
+            CAPTION "..."
+            FONTNAME 'Arial'
+            TOOLTIP ''
+     END BUTTON  
+
+     DEFINE BUTTON Button_2
+            ROW    60
+            COL    480
+            WIDTH  28
+            HEIGHT 28
+            ACTION If ( !Empty( Folder := GetFolder() ) , main.text_2.Value := Folder , )
+            CAPTION "..."
+            FONTNAME 'Arial'
+            TOOLTIP ''
+     END BUTTON  
+
+     DEFINE BUTTON Button_3
+            ROW    90
+            COL    480
+            WIDTH  28
+            HEIGHT 28
+            ACTION If ( !Empty( Folder := GetFolder() ) , main.text_3.Value := Folder , )
+            CAPTION "..."
+            FONTNAME 'Arial'
+            TOOLTIP ''
+     END BUTTON  
+
+     DEFINE BUTTON Button_4
+            ROW    250
+            COL    400
+            WIDTH  100
+            HEIGHT 28
+            ACTION ook_Go()
+            CAPTION "OK"
+            FONTNAME 'Arial'
+            TOOLTIP 'Batch Generate'
+     END BUTTON  
+
+     DEFINE LABEL Label_4
+            ROW    250
+            COL    340
+            WIDTH  50
+            HEIGHT 24
+            VALUE "Save"
+     END LABEL  
+
+     DEFINE COMBOBOX Combo_1
+            ROW    30
+            COL    150
+            WIDTH  100
+            HEIGHT 100
+            ITEMS {'Harbour','xHarbour'}
+            VALUE 1
+            FONTNAME 'Arial'
+            TOOLTIP ''
+            ONCHANGE Disable_hbmk2()
+     END COMBOBOX  
+
+     DEFINE COMBOBOX Combo_2
+            ROW    60
+            COL    150
+            WIDTH  100
+            HEIGHT 100
+            ITEMS {"MinGW","Borland C","Pelles C","Visual C"}
+            VALUE 1
+            FONTNAME 'Arial'
+            TOOLTIP ''
+     END COMBOBOX  
+
+     DEFINE COMBOBOX Combo_3
+            ROW    90
+            COL    150
+            WIDTH  100
+            HEIGHT 100
+            ITEMS {"oohg","HMG", "MiniGUI Ext"}
+            VALUE 1
+            FONTNAME 'Arial'
+            TOOLTIP ''
+     END COMBOBOX  
+
+     DEFINE TEXTBOX Text_1
+            ROW    30
+            COL    260
+            WIDTH  200
+            HEIGHT 24
+            FONTNAME 'Arial'
+            VALUE "c:\oohg\hb32"
+     END TEXTBOX 
+
+     DEFINE TEXTBOX Text_2
+            ROW    60
+            COL    260
+            WIDTH  200
+            HEIGHT 24
+            FONTNAME 'Arial'
+            VALUE "c:\oohg\hb32\comp\mingw"
+     END TEXTBOX 
+
+     DEFINE TEXTBOX Text_3
+            ROW    90
+            COL    260
+            WIDTH  200
+            HEIGHT 24
+            FONTNAME 'Arial'
+            VALUE "c:\oohg"
+     END TEXTBOX 
+
+     DEFINE LABEL Label_5
+            ROW    120
+            COL    40
+            WIDTH  100
+            HEIGHT 24
+            VALUE "Mode"
+     END LABEL  
+
+     DEFINE COMBOBOX Combo_Mode
+            ROW    120
+            COL    150
+            WIDTH  100
+            HEIGHT 100
+            ITEMS {'Hbmk2','Batch'}
+            VALUE 1
+            FONTNAME 'Arial'
+            TOOLTIP ''
+            ONCHANGE   Enable_Hbmk2()
+     END COMBOBOX
+
+     DEFINE LABEL Label_6
+            ROW    150
+            COL    40
+            WIDTH  100
+            HEIGHT 24
+            VALUE "Bits"
+     END LABEL  
+
+     DEFINE COMBOBOX Combo_Bits
+            ROW    150
+            COL    150
+            WIDTH  100
+            HEIGHT 100
+            ITEMS {'x32','x64','x128'}
+            VALUE 1
+            FONTNAME 'Arial'
+            TOOLTIP ''
+     END COMBOBOX  
+
+     DEFINE LABEL Label_7
+            ROW    200
+            COL    40
+            WIDTH  100
+            HEIGHT 24
+            VALUE "HB Version"
+     END LABEL  
+
+     DEFINE COMBOBOX Combo_Ver
+            ROW    200
+            COL    150
+            WIDTH  100
+            HEIGHT 100
+            ITEMS {'3.0','3.1','3.2','3.4'}
+            VALUE 3
+            FONTNAME 'Arial'
+            TOOLTIP ''
+     END COMBOBOX  
+
+END WINDOW
+
+
