@@ -1,2 +1,2 @@
 # ook
-Batch Generator
+Batch file generator to compile the oohg library
