@@ -7,6 +7,12 @@
 #define cNewLi         Hb_OSNewLine()
 #define cBackS         Hb_OsPathSeparator()
 
+#define cHbVer         Version()      //Harbour
+#define cCComp         Hb_Compiler()  //C Compiler
+#define cOsSys         Os()           //OS System
+#define cGuiVer        oohgVersion()  //GUI
+
+
 *---------------------------------------------------------------------*
 FUNCTION Main
 *---------------------------------------------------------------------*
@@ -54,6 +60,10 @@ Procedure ook_Go()
            ook_mingw_bat()
       Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1    // batch - Borland - Harbour
            ook_bcc_bat()
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1    // batch - Pelles - Harbour
+           ook_pocc_bat()
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1    // batch - msvc - Harbour
+           ook_msvc_bat()
 
       Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 2    // batch - Mingw - xHarbour
            ook_xmingw_bat()

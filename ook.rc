@@ -1,3 +1,4 @@
+FAVICON ICON src\favicon.ico
 
 #ifdef __GNUC__
 
@@ -17,7 +18,7 @@ BEGIN
             VALUE "FileDescription", "Batch Generator for OOHG"
             VALUE "FileVersion", "1, 0, 0, 0"
             VALUE "InternalName", " OOK "
-            VALUE "LegalCopyright", "© 2019 MigSoft"
+            VALUE "LegalCopyright", "(c)2019 MigSoft"
             VALUE "OriginalFilename", " ook.exe"
             VALUE "ProductName", " OOK Batch Generator"
             VALUE "ProductVersion", "1, 0, 0, 0"
@@ -51,7 +52,7 @@ END
             VALUE "FileDescription", "Batch Generator for OOHG"
             VALUE "FileVersion", "1.0.0.0"
             VALUE "InternalName", "OOK\000"
-            VALUE "LegalCopyright", "© 2019 MigSoft\000"
+            VALUE "LegalCopyright", "© 2005-2019 MigSoft\000"
             VALUE "LegalTrademarks", "Harbour"
             VALUE "OriginalFilename", "ook.exe"
             VALUE "ProductName", " OOK Batch Generator\000"

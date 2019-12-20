@@ -1,7 +1,7 @@
 *HMGS-MINIGUI-IDE Two-Way Form Designer Generated Code
 *OPEN SOURCE PROJECT 2005-2016 Walter Formigoni http://sourceforge.net/projects/hmgs-minigui/
 
-DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Generator by MigSoft" ICON "FAVICON" MAIN
+DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Generator by MigSoft" ICON "FAVICON" MAIN BACKCOLOR {183,183,255}
 
      DEFINE LABEL Label_1
             ROW    30
@@ -9,6 +9,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
             WIDTH  100
             HEIGHT 24
             VALUE "xBase Compiler"
+            BACKCOLOR {183,183,255}
      END LABEL  
 
      DEFINE LABEL Label_2
@@ -17,6 +18,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
             WIDTH  100
             HEIGHT 24
             VALUE "C Compiler"
+            BACKCOLOR {183,183,255}
      END LABEL  
 
      DEFINE LABEL Label_3
@@ -25,6 +27,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
             WIDTH  100
             HEIGHT 24
             VALUE "GUI"
+            BACKCOLOR {183,183,255}
      END LABEL  
 
      DEFINE BUTTON Button_1
@@ -61,8 +64,8 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
      END BUTTON  
 
      DEFINE BUTTON Button_4
-            ROW    250
-            COL    400
+            ROW    300
+            COL    410
             WIDTH  100
             HEIGHT 28
             ACTION ook_Go()
@@ -72,11 +75,12 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
      END BUTTON  
 
      DEFINE LABEL Label_4
-            ROW    250
-            COL    340
+            ROW    300
+            COL    360
             WIDTH  50
             HEIGHT 24
             VALUE "Save"
+            BACKCOLOR {183,183,255}
      END LABEL  
 
      DEFINE COMBOBOX Combo_1
@@ -146,6 +150,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
             WIDTH  100
             HEIGHT 24
             VALUE "Mode"
+            BACKCOLOR {183,183,255}
      END LABEL  
 
      DEFINE COMBOBOX Combo_Mode
@@ -157,8 +162,8 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
             VALUE 1
             FONTNAME 'Arial'
             TOOLTIP ''
-            ONCHANGE   Enable_Hbmk2()
-     END COMBOBOX
+            ONCHANGE Enable_Hbmk2()
+     END COMBOBOX  
 
      DEFINE LABEL Label_6
             ROW    150
@@ -166,6 +171,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
             WIDTH  100
             HEIGHT 24
             VALUE "Bits"
+            BACKCOLOR {183,183,255}
      END LABEL  
 
      DEFINE COMBOBOX Combo_Bits
@@ -180,15 +186,16 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
      END COMBOBOX  
 
      DEFINE LABEL Label_7
-            ROW    200
+            ROW    180
             COL    40
             WIDTH  100
             HEIGHT 24
             VALUE "HB Version"
+            BACKCOLOR {183,183,255}
      END LABEL  
 
      DEFINE COMBOBOX Combo_Ver
-            ROW    200
+            ROW    180
             COL    150
             WIDTH  100
             HEIGHT 100
@@ -197,6 +204,46 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 350 TITLE "(c)2019 Batch Ge
             FONTNAME 'Arial'
             TOOLTIP ''
      END COMBOBOX  
+
+     DEFINE LABEL Label_8
+            ROW    270
+            COL    40
+            WIDTH  220
+            HEIGHT 18
+            VALUE cCComp
+            FONTNAME "Courier New"
+            BACKCOLOR {183,183,255}
+     END LABEL  
+
+     DEFINE LABEL Label_9
+            ROW    290
+            COL    40
+            WIDTH  220
+            HEIGHT 18
+            VALUE cHbVer
+            FONTNAME "Courier New"
+            BACKCOLOR {183,183,255}
+     END LABEL  
+
+     DEFINE LABEL Label_10
+            ROW    310
+            COL    40
+            WIDTH  220
+            HEIGHT 18
+            VALUE cOsSys
+            FONTNAME "Courier New"
+            BACKCOLOR {183,183,255}
+     END LABEL  
+
+     DEFINE LABEL Label_11
+            ROW    250
+            COL    40
+            WIDTH  220
+            HEIGHT 18
+            VALUE cGuiVer
+            FONTNAME "Courier New"
+            BACKCOLOR {183,183,255}
+     END LABEL  
 
 END WINDOW
 
