@@ -1,12 +1,9 @@
 #include <oohg.ch>
-
-#define cNewLi         Hb_OSNewLine()
-#define cBackS         Hb_OsPathSeparator()
-
+#include "ook.ch"
 
 Procedure ook_bcc_bat()
    Local Out := ''
-   
+
    DECLARE WINDOW Main
 
    HG_HRB   := If(Empty(Main.Text_1.value),,Main.Text_1.value)
@@ -24,7 +21,7 @@ Procedure ook_bcc_bat()
        Commom_Batch()
    Endif
 
-   FErase(HG_ROOT+'\Source\'+'ook_bcc.bat')
+   FErase(HG_ROOT+'\Source\'+NameMemo()+'.bat')
 
         Out := Out + '@echo off'+ cNewLi
         Out := Out + 'rem ---------------------------------------------------------------' + cNewLi
@@ -152,9 +149,9 @@ Procedure ook_bcc_bat()
         Out := Out + ':END' + cNewLi
 
         If !Empty(Main.Text_1.value) .and. !Empty(Main.Text_2.value) .and. !Empty(Main.Text_3.value)
-            hb_Memowrit ( HG_ROOT+'\Source\'+'ook_bcc.bat' , Out )
-            If File(HG_ROOT+'\Source\'+'ook_bcc.bat')
-               MsgInfo("File: "+HG_ROOT+'\Source\'+'ook_bcc.bat'+" Created","Success...")
+            hb_Memowrit ( HG_ROOT+'\Source\'+NameMemo()+'.bat' , Out )
+            If File(HG_ROOT+'\Source\'+NameMemo()+'.bat')
+               MsgInfo("File: "+HG_ROOT+'\Source\'+NameMemo()+'.bat'+" Created","Success...")
             Endif
         Endif
 

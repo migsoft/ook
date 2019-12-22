@@ -1,8 +1,5 @@
 #include <oohg.ch>
-
-#define cNewLi         Hb_OSNewLine()
-#define cBackS         Hb_OsPathSeparator()
-
+#include "ook.ch"
 
 Procedure ook_pocc_mk2()
    Local Out := ''
@@ -20,7 +17,7 @@ Procedure ook_pocc_mk2()
    LIB_HRB  := W_H_Compiler()
    BIN_HRB  := "bin"
 
-   FErase(HG_ROOT+'\Source\'+'ook_hbmk2_pocc.bat')
+   FErase(HG_ROOT+'\Source\'+NameMemo()+'.bat')
 
         Out := Out + '@echo off'+ cNewLi
         Out := Out + 'rem ---------------------------------------------------------------' + cNewLi
@@ -54,10 +51,12 @@ Procedure ook_pocc_mk2()
         Out := Out + 'Echo ! Compilando Bostaurus...' + cNewLi
         Out := Out + 'hbmk2 bostaurus.hbp %2 %3 %4 %5 %6 %7 %8 %9 >> build.log 2>&1' + cNewLi
         Out := Out + cNewLi
+
         If !Empty(Main.Text_1.value) .and. !Empty(Main.Text_2.value) .and. !Empty(Main.Text_3.value)
-            hb_Memowrit ( HG_ROOT+'\Source\'+'ook_hbmk2_pocc.bat' , Out )
-            If File(HG_ROOT+'\Source\'+'ook_hbmk2_pocc.bat')
-               MsgInfo("File: "+HG_ROOT+'\Source\'+'ook_hbmk2_pocc.bat'+" Created","Success...")
+            hb_Memowrit ( HG_ROOT+'\Source\'+NameMemo()+'.bat' , Out )
+            If File(HG_ROOT+'\Source\'+NameMemo()+'.bat')
+               MsgInfo("File: "+HG_ROOT+'\Source\'+NameMemo()+'.bat'+" Created","Success...")
             Endif
         Endif
+
 Return
