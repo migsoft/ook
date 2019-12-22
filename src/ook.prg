@@ -3,15 +3,7 @@
  * https://migsoft.ml - https://oohg.github.io
 
 #include <oohg.ch>
-
-#define cNewLi         Hb_OSNewLine()
-#define cBackS         Hb_OsPathSeparator()
-
-#define cHbVer         Version()      //Harbour
-#define cCComp         Hb_Compiler()  //C Compiler
-#define cOsSys         Os()           //OS System
-#define cGuiVer        oohgVersion()  //GUI
-
+#include <ook.ch>
 
 *---------------------------------------------------------------------*
 FUNCTION Main
