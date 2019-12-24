@@ -10,10 +10,15 @@ _temp.txt
 *.gcc
 *.bc
 *.log
+*.map
 /vOBJh
 /vOBJx
 /bOBJh
 /mOBJh
+/pOBJx64
+/bOBJx64
+/pOBJh
+
 
 # Windows image file caches
 Thumbs.db
