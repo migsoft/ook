@@ -63,7 +63,7 @@ Procedure ook_xbcc_bat()
         Out := Out + ':COMPILE_PRGS' + cNewLi
         Out := Out + cNewLi
         Out := Out + '   if exist resul.txt del resul.txt' + cNewLi
-        Out := Out + '   call common_make "%HG_HRB%\%LIB_HRB%\tip.lib" -q0 ">> resul.txt 2>&1"' + cNewLi
+        Out := Out + '   call common_make "%HG_HRB%\%LIB_HRB%\tip.lib" -q0 ">> ' + NameMemo()+  ' 2>&1"' + cNewLi
         Out := Out + '   if errorlevel 1 goto EXIT1' + cNewLi
         Out := Out + '   echo. >> resul.txt' + cNewLi
         Out := Out + cNewLi
