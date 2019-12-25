@@ -40,16 +40,16 @@ Procedure ook_msvc_mk2()
         Out := Out + 'IF EXIST "%HG_VC%"\vcvarsall.bat CALL "%HG_VC%"\vcvarsall.bat' + cNewLi
         Out := Out + cNewLi
         Out := Out + 'Echo ! Compilando ooHG...' + cNewLi
-        Out := Out + 'hbmk2 oohg.hbp      %2 %3 %4 %5 %6 %7 %8 %9 >> build.log 2>&1' +cNewLi
+        Out := Out + 'hbmk2 oohg.hbp      %2 %3 %4 %5 %6 %7 %8 %9 >> '+NameMemo()+' 2>&1' +cNewLi
         Out := Out + cNewLi
         Out := Out + 'Echo ! Compilando Miniprint...' + cNewLi
-        Out := Out + 'hbmk2 miniprint.hbp %2 %3 %4 %5 %6 %7 %8 %9 >> build.log 2>&1' + cNewLi
+        Out := Out + 'hbmk2 miniprint.hbp %2 %3 %4 %5 %6 %7 %8 %9 >> '+NameMemo()+' 2>&1' + cNewLi
         Out := Out + cNewLi
         Out := Out + 'Echo ! Compilando Hbprinter...' + cNewLi
-        Out := Out + 'hbmk2 hbprinter.hbp %2 %3 %4 %5 %6 %7 %8 %9 >> build.log 2>&1' + cNewLi
+        Out := Out + 'hbmk2 hbprinter.hbp %2 %3 %4 %5 %6 %7 %8 %9 >> '+NameMemo()+' 2>&1' + cNewLi
         Out := Out + cNewLi
         Out := Out + 'Echo ! Compilando Bostaurus...' + cNewLi
-        Out := Out + 'hbmk2 bostaurus.hbp %2 %3 %4 %5 %6 %7 %8 %9 >> build.log 2>&1' + cNewLi
+        Out := Out + 'hbmk2 bostaurus.hbp %2 %3 %4 %5 %6 %7 %8 %9 >> '+NameMemo()+' 2>&1' + cNewLi
         Out := Out + cNewLi
 
         If !Empty(Main.Text_1.value) .and. !Empty(Main.Text_2.value) .and. !Empty(Main.Text_3.value)
