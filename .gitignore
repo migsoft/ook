@@ -11,6 +11,7 @@ _temp.txt
 *.bc
 *.log
 *.map
+*.mpm
 /vOBJh
 /vOBJx
 /bOBJh
