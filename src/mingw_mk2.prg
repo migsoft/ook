@@ -17,14 +17,17 @@ Procedure ook_mingw_mk2()
    LIB_HRB  := W_H_Compiler()
    BIN_HRB  := "bin"
 
-   If     !File(HG_ROOT+'\Source\'+'oohg.hbp')
-           hbp_oohg()
-   ElseIf !File(HG_ROOT+'\Source\'+'miniprint.hbp')
-           hbp_miniprint()
-   ElseIf !File(HG_ROOT+'\Source\'+'hbprinter.hbp')
-           hbp_hbprinter()
-   ElseIf !File(HG_ROOT+'\Source\'+'bostaurus.hbp')
-           hbp_bostaurus()
+   If !File(HG_ROOT+'\Source\'+'oohg.hbp')
+       hbp_oohg()
+   Endif
+   If !File(HG_ROOT+'\Source\'+'miniprint.hbp')
+       hbp_miniprint()
+   Endif
+   If !File(HG_ROOT+'\Source\'+'hbprinter.hbp')
+       hbp_hbprinter()
+   Endif
+   If !File(HG_ROOT+'\Source\'+'bostaurus.hbp')
+       hbp_bostaurus()
    Endif
 
    FErase(HG_ROOT+'\Source\'+NameMemo()+'.bat')

@@ -54,7 +54,7 @@ Procedure hbp_oohg
         Out := Out + '#-cflag=-Wint-to-pointer-cast'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '#alerts on exit'+ cNewLi
-        Out := Out + 'beep'+ cNewLi
+        Out := Out + '-beep'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '# uncomment the following line to build .ppo files'+ cNewLi
         Out := Out + '#-p.\ppo\'+ cNewLi
