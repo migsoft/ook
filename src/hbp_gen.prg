@@ -14,7 +14,7 @@ Procedure hbp_oohg
         Out := Out + '-hblib'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '# compilation is incremental (hidden .hmk folder is created)'+ cNewLi
-        Out := Out + '# to make a full compilation add '-rebuild' flag to command line'+ cNewLi
+        Out := Out + '# to make a full compilation add -rebuild flag to command line'+ cNewLi
         Out := Out + '-inc'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '# name of output file'+ cNewLi
@@ -164,7 +164,7 @@ Procedure hbp_miniprint
         Out := Out + '-hblib'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '# compilation is incremental (hidden .hmk folder is created)'+ cNewLi
-        Out := Out + '# to make a full compilation add '-rebuild' flag to command line'+ cNewLi
+        Out := Out + '# to make a full compilation add -rebuild flag to command line'+ cNewLi
         Out := Out + '-inc'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '# name of output file'+ cNewLi
@@ -214,7 +214,7 @@ Procedure hbp_hbprinter
         Out := Out + '-hblib'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '# compilation is incremental (hidden .hmk folder is created)'+ cNewLi
-        Out := Out + '# to make a full compilation add '-rebuild' flag to command line'+ cNewLi
+        Out := Out + '# to make a full compilation add -rebuild flag to command line'+ cNewLi
         Out := Out + '-inc'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '# name of output file'+ cNewLi
@@ -264,7 +264,7 @@ Procedure hbp_bostaurus
         Out := Out + '-hblib'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '# compilation is incremental (hidden .hmk folder is created)'+ cNewLi
-        Out := Out + '# to make a full compilation add '-rebuild' flag to command line'+ cNewLi
+        Out := Out + '# to make a full compilation add -rebuild flag to command line'+ cNewLi
         Out := Out + '-inc'+ cNewLi
         Out := Out + cNewLi
         Out := Out + '# name of output file'+ cNewLi
