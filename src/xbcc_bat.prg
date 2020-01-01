@@ -62,7 +62,7 @@ Procedure ook_xbcc_bat()
         Out := Out + cNewLi
         Out := Out + ':COMPILE_PRGS' + cNewLi
         Out := Out + cNewLi
-        Out := Out + '   if exist resul.txt del resul.txt' + cNewLi
+        Out := Out + '   if exist '+NameMemo()+' del ' + NameMemo() + cNewLi
         Out := Out + '   call common_make "%HG_HRB%\%LIB_HRB%\tip.lib" -q0 ">> ' + NameMemo()+  ' 2>&1"' + cNewLi
         Out := Out + '   if errorlevel 1 goto EXIT1' + cNewLi
         Out := Out + '   echo. >> ' + NameMemo() + cNewLi
@@ -83,7 +83,7 @@ Procedure ook_xbcc_bat()
         Out := Out + '   if not exist miniprint.c echo miniprint.c is missing! >> '+ NameMemo() + cNewLi
         Out := Out + '   if exist miniprint.c %HG_BCC%\bin\bcc32 %HG_X_FLAGS% miniprint.c >> '+ NameMemo() + cNewLi
         Out := Out + '   if errorlevel 1 goto EXIT2' + cNewLi
-        Out := Out + '   if not exist bostaurus.c echo bostaurus.c is missing! >> resul.txt' + cNewLi
+        Out := Out + '   if not exist bostaurus.c echo bostaurus.c is missing! >> ' + NameMemo() + cNewLi
         Out := Out + '   if exist bostaurus.c %HG_BCC%\bin\bcc32 %HG_X_FLAGS% bostaurus.c >> '+ NameMemo() + cNewLi
         Out := Out + '   if errorlevel 1 goto EXIT2' + cNewLi
         Out := Out + '   echo. >> '+ NameMemo() + cNewLi

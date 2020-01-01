@@ -15,10 +15,13 @@ _temp.txt
 /vOBJh
 /vOBJx
 /bOBJh
+/bOBJx
 /mOBJh
+/mOBJx
 /pOBJx64
 /bOBJx64
 /pOBJh
+/pOBJx
 /mOBJh64
 
 # Windows image file caches
@@ -68,4 +71,3 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-ook.mpm
