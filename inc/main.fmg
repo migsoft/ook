@@ -120,7 +120,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
      DEFINE TEXTBOX Text_1
             ROW    30
             COL    260
-            WIDTH  200
+            WIDTH  210
             HEIGHT 24
             FONTNAME 'Arial'
             VALUE "c:\oohg\hb32"
@@ -130,7 +130,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
      DEFINE TEXTBOX Text_2
             ROW    60
             COL    260
-            WIDTH  200
+            WIDTH  210
             HEIGHT 24
             FONTNAME 'Arial'
             VALUE "c:\oohg\hb32\comp\mingw"
@@ -140,7 +140,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
      DEFINE TEXTBOX Text_3
             ROW    90
             COL    260
-            WIDTH  200
+            WIDTH  210
             HEIGHT 24
             FONTNAME 'Arial'
             VALUE "c:\oohg"
