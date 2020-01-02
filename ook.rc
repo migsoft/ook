@@ -49,7 +49,7 @@ END
         BLOCK "280a04b0"
         {
             VALUE "CompanyName", "Miguel Angel Juárez Apaza"
-            VALUE "FileDescription", "Batch Generator for OOHG"
+            VALUE "FileDescription", "Batch Generator for OOHG\000"
             VALUE "FileVersion", "1.0.0.0"
             VALUE "InternalName", "OOK\000"
             VALUE "LegalCopyright", "© 2005-2019 MigSoft\000"
