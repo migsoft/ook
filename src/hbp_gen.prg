@@ -4,7 +4,9 @@
 *---------------------------------------------------------------------*
 Procedure hbp_oohg
 *---------------------------------------------------------------------*
-    Local Out :=''
+   Local Out :=''
+
+   DECLARE WINDOW Main
 
         Out := Out + '#'+ cNewLi
         Out := Out + '# $Id: oohg.hbp $'+ cNewLi
@@ -143,9 +145,13 @@ Procedure hbp_oohg
         Out := Out + cNewLi
         Out := Out + '# EOF'+ cNewLi
 
-        If !File(HG_ROOT+'\Source\oohg.hbp')
-            hb_Memowrit ( HG_ROOT+'\Source\oohg.hbp' , Out )
-            MsgInfo("File: "+HG_ROOT+'\Source\oohg.hbp'+" Created","Success...")
+        If !Empty(Main.Text_1.value) .and. !Empty(Main.Text_2.value) .and. !Empty(Main.Text_3.value)
+              If !File(HG_ROOT+'\Source\oohg.hbp')
+                 hb_Memowrit ( HG_ROOT+'\Source\oohg.hbp' , Out )
+                 If File(HG_ROOT+'\Source\oohg.hbp')
+                    MsgInfo("File: "+HG_ROOT+'\Source\oohg.hbp'+" Created","Success...")
+                 Endif
+              Endif
         Endif
 
 Return
@@ -194,9 +200,13 @@ Procedure hbp_miniprint
         Out := Out + cNewLi
         Out := Out + '# EOF'+ cNewLi
 
-        If !File(HG_ROOT+'\Source\miniprint.hbp')
-            hb_Memowrit ( HG_ROOT+'\Source\miniprint.hbp' , Out )
-            MsgInfo("File: "+HG_ROOT+'\Source\miniprint.hbp'+" Created","Success...")
+        If !Empty(Main.Text_1.value) .and. !Empty(Main.Text_2.value) .and. !Empty(Main.Text_3.value)
+              If !File(HG_ROOT+'\Source\miniprint.hbp')
+                 hb_Memowrit ( HG_ROOT+'\Source\miniprint.hbp' , Out )
+                 If File(HG_ROOT+'\Source\miniprint.hbp')
+                    MsgInfo("File: "+HG_ROOT+'\Source\miniprint.hbp'+" Created","Success...")
+                 Endif
+              Endif
         Endif
 
 Return
@@ -244,9 +254,13 @@ Procedure hbp_hbprinter
         Out := Out + cNewLi
         Out := Out + '# EOF'+ cNewLi
 
-        If !File(HG_ROOT+'\Source\hbprinter.hbp')
-            hb_Memowrit ( HG_ROOT+'\Source\hbprinter.hbp' , Out )
-            MsgInfo("File: "+HG_ROOT+'\Source\hbprinter.hbp'+" Created","Success...")
+        If !Empty(Main.Text_1.value) .and. !Empty(Main.Text_2.value) .and. !Empty(Main.Text_3.value)
+              If !File(HG_ROOT+'\Source\hbprinter.hbp')
+                 hb_Memowrit ( HG_ROOT+'\Source\hbprinter.hbp' , Out )
+                 If File(HG_ROOT+'\Source\hbprinter.hbp')
+                    MsgInfo("File: "+HG_ROOT+'\Source\hbprinter.hbp'+" Created","Success...")
+                 Endif
+              Endif
         Endif
 
 Return
@@ -313,9 +327,13 @@ Procedure hbp_bostaurus
         Out := Out + cNewLi
         Out := Out + '# EOF'+ cNewLi
 
-        If !File(HG_ROOT+'\Source\bostaurus.hbp')
-            hb_Memowrit ( HG_ROOT+'\Source\bostaurus.hbp' , Out )
-            MsgInfo("File: "+HG_ROOT+'\Source\bostaurus.hbp'+" Created","Success...")
+        If !Empty(Main.Text_1.value) .and. !Empty(Main.Text_2.value) .and. !Empty(Main.Text_3.value)
+              If !File(HG_ROOT+'\Source\bostaurus.hbp')
+                 hb_Memowrit ( HG_ROOT+'\Source\bostaurus.hbp' , Out )
+                 If File(HG_ROOT+'\Source\bostaurus.hbp')
+                    MsgInfo("File: "+HG_ROOT+'\Source\bostaurus.hbp'+" Created","Success...")
+                 Endif
+              Endif
         Endif
 
 Return
