@@ -10,23 +10,23 @@ Procedure ook_mk2_hmg1()
    HG_MINGW := If(Empty(Main.Text_2.value),,Main.Text_2.value)
    HG_ROOT  := If(Empty(Main.Text_3.value),,Main.Text_3.value)
 
-   If !File(HG_ROOT+'\hmg32.hbp')
-       hbp_hmg32()
-   Endif
-   If !File(HG_ROOT+'\hmg32.hbc')
-       hbc_hmg32()
-   Endif
-   If !File(HG_ROOT+'\hmg64.hbp')
-       hbp_hmg64()
-   Endif
-   If !File(HG_ROOT+'\hmg64.hbc')
-       hbc_hmg64()
-   Endif
-   If !File(HG_ROOT+'\BuildLib32.bat')
-       ook_mk2_hmg2()
-   Endif
+   If !File(HG_ROOT+'\BuildAllLib32.bat')
 
-
+      If !File(HG_ROOT+'\hmg32.hbp')
+          hbp_hmg32()
+      Endif
+      If !File(HG_ROOT+'\hmg32.hbc')
+         hbc_hmg32()
+      Endif
+      If !File(HG_ROOT+'\hmg64.hbp')
+         hbp_hmg64()
+      Endif
+      If !File(HG_ROOT+'\hmg64.hbc')
+         hbc_hmg64()
+      Endif
+      If !File(HG_ROOT+'\BuildLib32.bat')
+         ook_mk2_hmg2()
+      Endif
 
         Out := Out + '@echo off'+ cNewLi
         Out := Out + cNewLi
@@ -92,13 +92,13 @@ Procedure ook_mk2_hmg1()
                MsgInfo("File: "+HG_ROOT+'\BuildAllLib32.bat'+" Created","Success...")
             Endif
         Endif
-
+   Endif
 Return
 
 
 Procedure ook_mk2_hmg2()
    Local Out := ''
-   
+
    HG_HRB   := If(Empty(Main.Text_1.value),,Main.Text_1.value)
    HG_MINGW := If(Empty(Main.Text_2.value),,Main.Text_2.value)
    HG_ROOT  := If(Empty(Main.Text_3.value),,Main.Text_3.value)
@@ -213,21 +213,23 @@ Procedure ook_mk2_hmg3()
    HG_MINGW := If(Empty(Main.Text_2.value),,Main.Text_2.value)
    HG_ROOT  := If(Empty(Main.Text_3.value),,Main.Text_3.value)
 
-   If !File(HG_ROOT+'\hmg32.hbp')
-       hbp_hmg32()
-   Endif
-   If !File(HG_ROOT+'\hmg32.hbc')
-       hbc_hmg32()
-   Endif
-   If !File(HG_ROOT+'\hmg64.hbp')
-       hbp_hmg64()
-   Endif
-   If !File(HG_ROOT+'\hmg64.hbc')
-       hbc_hmg64()
-   Endif
-   If !File(HG_ROOT+'\_BuildLib64.bat')
-      ook_mk2_hmg4()
-   Endif
+   If !File(HG_ROOT+'\BuildAllLib32.bat')
+
+      If !File(HG_ROOT+'\hmg32.hbp')
+         hbp_hmg32()
+      Endif
+      If !File(HG_ROOT+'\hmg32.hbc')
+         hbc_hmg32()
+      Endif
+      If !File(HG_ROOT+'\hmg64.hbp')
+         hbp_hmg64()
+      Endif
+      If !File(HG_ROOT+'\hmg64.hbc')
+         hbc_hmg64()
+      Endif
+      If !File(HG_ROOT+'\_BuildLib64.bat')
+         ook_mk2_hmg4()
+      Endif
 
         Out := Out + '@echo off'+ cNewLi
         Out := Out + cNewLi
@@ -291,6 +293,8 @@ Procedure ook_mk2_hmg3()
                MsgInfo("File: "+HG_ROOT+'\_BuildAllLib64.bat'+" Created","Success...")
             Endif
         Endif
+
+   Endif     
 
 Return
 
