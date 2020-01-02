@@ -20,6 +20,9 @@ Procedure ook_bcc_mk2()
    If !File(HG_ROOT+'\Source\'+'oohg.hbp')
        hbp_oohg()
    Endif
+   If !File(HG_ROOT+'\oohg.hbc')
+       hbc_oohg()
+   Endif
    If !File(HG_ROOT+'\Source\'+'miniprint.hbp')
        hbp_miniprint()
    Endif

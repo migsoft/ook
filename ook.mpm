@@ -36,7 +36,7 @@ WITHDEBUG=1.00
 [COMPTYPE]
 INCREMENTAL=2.00
 [NFILES]
-TOTSOUFILES=14.00
+TOTSOUFILES=16.00
 TOTLIBFILES=0.00
 TOTFMGFILES=0.00
 TOTRCFILES=0.00
@@ -55,3 +55,5 @@ SCRFILE11=PathProject\src\xpocc_bat.prg
 SCRFILE12=PathProject\src\msvc_bat.prg
 SCRFILE13=PathProject\src\pocc_bat.prg
 SCRFILE14=PathProject\src\hbp_gen.prg
+SCRFILE15=PathProject\src\hbp_hmg.prg
+SCRFILE16=PathProject\src\mk2_hmg.prg

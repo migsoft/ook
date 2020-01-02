@@ -75,7 +75,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
      END BUTTON  
 
      DEFINE LABEL Label_4
-            ROW    300
+            ROW    305
             COL    360
             WIDTH  50
             HEIGHT 24
@@ -111,7 +111,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
             COL    150
             WIDTH  100
             HEIGHT 100
-            ITEMS {"oohg","HMG", "MiniGUI Ext"}
+            ITEMS {"oohg","HMG"}
             VALUE 1
             FONTNAME 'Arial'
             TOOLTIP ''
@@ -179,7 +179,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
             COL    150
             WIDTH  100
             HEIGHT 100
-            ITEMS {'x32','x64','x128'}
+            ITEMS {'x32','x64'}
             VALUE 1
             FONTNAME 'Arial'
             TOOLTIP ''
@@ -199,8 +199,8 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
             COL    150
             WIDTH  100
             HEIGHT 100
-            ITEMS {'3.0','3.1','3.2','3.4'}
-            VALUE 3
+            ITEMS {'2.0','2.1','3.0','3.1','3.2','3.4'}
+            VALUE 5
             FONTNAME 'Arial'
             TOOLTIP ''
      END COMBOBOX  

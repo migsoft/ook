@@ -1,12 +1,12 @@
 #include <oohg.ch>
 #include 'ook.ch'
 
+   DECLARE WINDOW Main
+
 *---------------------------------------------------------------------*
 Procedure hbp_oohg
 *---------------------------------------------------------------------*
    Local Out :=''
-
-   DECLARE WINDOW Main
 
         Out := Out + '#'+ cNewLi
         Out := Out + '# $Id: oohg.hbp $'+ cNewLi
@@ -150,6 +150,65 @@ Procedure hbp_oohg
                  hb_Memowrit ( HG_ROOT+'\Source\oohg.hbp' , Out )
                  If File(HG_ROOT+'\Source\oohg.hbp')
                     MsgInfo("File: "+HG_ROOT+'\Source\oohg.hbp'+" Created","Success...")
+                 Endif
+              Endif
+        Endif
+
+Return
+
+
+*---------------------------------------------------------------------*
+Procedure hbc_oohg
+*---------------------------------------------------------------------*
+   Local Out :=''
+
+        Out := Out + '#'+ cNewLi
+        Out := Out + '# $Id: oohg.hbc $'+ cNewLi
+        Out := Out + '#'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# oohg paths'+ cNewLi
+        Out := Out + 'incpaths=include'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# c compiler will search this folder for OOHGs libs'+ cNewLi
+        Out := Out + 'libpaths=${HG_ROOT}\${LIB_GUI}'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# libs must be statically linked to avoid missing lib runtime errors'+ cNewLi
+        Out := Out + 'fullstatic=YES'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# add harbour contrib folder to search for additional include files'+ cNewLi
+        Out := Out + 'incpaths=${HG_HRB}\contrib\hbzebra'+ cNewLi
+        Out := Out + 'incpaths=${HG_HRB}\contrib\hbhpdf'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# add app folder to search for additional include files'+ cNewLi
+        Out := Out + 'incpaths=${hb_curdir}'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# Multithread support'+ cNewLi
+        Out := Out + 'mt=yes'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '#Harbour flags'+ cNewLi
+        Out := Out + 'prgflags=-n -q0 -w3 -es2'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# oohg libs'+ cNewLi
+        Out := Out + 'libs=oohg hbprinter miniprint bostaurus'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# harbour libs'+ cNewLi
+        Out := Out + 'libs=hbct hbmisc hbtip hbziparc hbmzip minizip hbzebra hbhpdf hbmemio rddsql hbodbc sddodbc hbwin png xhb'+ cNewLi
+        Out := Out + '{HB30}libs=libhpdf'+ cNewLi
+        Out := Out + '{HB32}libs=libhpdf'+ cNewLi
+        Out := Out + '{HB34}libs=hpdf'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# additional harbour libs not autodetected by hbmk2'+ cNewLi
+        Out := Out + '# for example: to add librddads remove the # from the next line'+ cNewLi
+        Out := Out + '#libs=rddads'+ cNewLi
+        Out := Out + cNewLi
+        Out := Out + '# optional libs'+ cNewLi
+        Out := Out + '#libs=socket mysqldll dll hbmysql rddleto'+ cNewLi
+
+        If !Empty(Main.Text_1.value) .and. !Empty(Main.Text_2.value) .and. !Empty(Main.Text_3.value)
+              If !File(HG_ROOT+'\oohg.hbc')
+                 hb_Memowrit ( HG_ROOT+'\oohg.hbc' , Out )
+                 If File(HG_ROOT+'\oohg.hbc')
+                    MsgInfo("File: "+HG_ROOT+'\oohg.hbc'+" Created","Success...")
                  Endif
               Endif
         Endif

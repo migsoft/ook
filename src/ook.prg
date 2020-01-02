@@ -20,58 +20,58 @@ Function NameMemo()
 
    Do Case
 
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1   // hbmk2 - Mingw - Harbour - x32
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // hbmk2 - Mingw - Harbour - x32 - oohg
            cname := 'hbmk2_mingw_hb_x32'
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1   // hbmk2 - Borland - Harbour - x32
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // hbmk2 - Borland - Harbour - x32
            cname := 'hbmk2_bcc_hb_x32'
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1   // hbmk2 - Pelles - Harbour - x32
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // hbmk2 - Pelles - Harbour - x32
            cname := 'hbmk2_pocc_hb_x32'
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1   // hbmk2 - msvc - Harbour - x32
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // hbmk2 - msvc - Harbour - x32
            cname := 'hbmk2_msvc_hb_x32'
 
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2   // hbmk2 - Mingw - Harbour - x64
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // hbmk2 - Mingw - Harbour - x64
            cname := 'hbmk2_mingw_hb_x64'
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2   // hbmk2 - Borland - Harbour - x64
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // hbmk2 - Borland - Harbour - x64
            cname := 'hbmk2_bcc_hb_x64'
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2   // hbmk2 - Pelles - Harbour - x64
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // hbmk2 - Pelles - Harbour - x64
            cname := 'hbmk2_pocc_hb_x64'
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2   // hbmk2 - msvc - Harbour - x64
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // hbmk2 - msvc - Harbour - x64
            cname := 'hbmk2_msvc_hb_x64'
 
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1  // batch - Mingw - Harbour - x32
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1 // batch - Mingw - Harbour - x32
            cname := 'bat_mingw_hb_x32'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1  // batch - Borland - Harbour - x32
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1 // batch - Borland - Harbour - x32
            cname := 'bat_bcc_hb_x32'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1   // batch - Pelles - Harbour - x32
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // batch - Pelles - Harbour - x32
            cname := 'bat_pocc_hb_x32'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1   // batch - msvc - Harbour - x32
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // batch - msvc - Harbour - x32
            cname := 'bat_msvc_hb_x32'
 
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2  // batch - Mingw - Harbour - x64
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1 // batch - Mingw - Harbour - x64
            cname := 'bat_mingw_hb_x64'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2  // batch - Borland - Harbour - x64
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1 // batch - Borland - Harbour - x64
            cname := 'bat_bcc_hb_x64'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2   // batch - Pelles - Harbour - x64
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // batch - Pelles - Harbour - x64
            cname := 'bat_pocc_hb_x64'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2   // batch - msvc - Harbour - x64
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // batch - msvc - Harbour - x64
            cname := 'bat_msvc_hb_x64'
 
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 1   // batch - Mingw - xHarbour - x32
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // batch - Mingw - xHarbour - x32
            cname := 'bat_mingw_xhb_x32'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 1   // batch - Borland - xHarbour - x32
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // batch - Borland - xHarbour - x32
            cname := 'bat_bcc_xhb_x32'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 1   // batch - Pelles - xHarbour - x32
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // batch - Pelles - xHarbour - x32
            cname := 'bat_pocc_xhb_x32'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 1   // batch - msvc - xHarbour - x32
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_3.value == 1  // batch - msvc - xHarbour - x32
            cname := 'bat_msvc_xhb_x32'
 
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 2   // batch - Mingw - xHarbour - x64
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // batch - Mingw - xHarbour - x64
            cname := 'bat_mingw_xhb_x64'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 2   // batch - Borland - xHarbour - x64
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // batch - Borland - xHarbour - x64
            cname := 'bat_bcc_xhb_x64'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 2   // batch - Pelles - xHarbour - x64
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // batch - Pelles - xHarbour - x64
            cname := 'bat_pocc_xhb_x64'
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 2   // batch - msvc - xHarbour - x64
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 2 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_3.value == 1  // batch - msvc - xHarbour - x64
            cname := 'bat_msvc_xhb_x64'
 
    EndCase
@@ -102,32 +102,37 @@ Return
 Procedure ook_Go()
 *---------------------------------------------------------------------*
    Do Case
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1    // hbmk2 - Mingw - Harbour
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_3.value == 1   // hbmk2 - Mingw - Harbour
            ook_mingw_mk2()
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1    // hbmk2 - Borland - Harbour
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_3.value == 1   // hbmk2 - Borland - Harbour
            ook_bcc_mk2()
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1    // hbmk2 - Pelles - Harbour
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_3.value == 1   // hbmk2 - Pelles - Harbour
            ook_pocc_mk2()
-      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1    // hbmk2 - msvc - Harbour
+      Case Main.Combo_Mode.value == 1 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_3.value == 1   // hbmk2 - msvc - Harbour
            ook_msvc_mk2()
 
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1    // batch - Mingw - Harbour
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 1 .and. Main.Combo_3.value == 1   // batch - Mingw - Harbour
            ook_mingw_bat()
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1    // batch - Borland - Harbour
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 1 .and. Main.Combo_3.value == 1   // batch - Borland - Harbour
            ook_bcc_bat()
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1    // batch - Pelles - Harbour
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 1 .and. Main.Combo_3.value == 1   // batch - Pelles - Harbour
            ook_pocc_bat()
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1    // batch - msvc - Harbour
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 1 .and. Main.Combo_3.value == 1   // batch - msvc - Harbour
            ook_msvc_bat()
 
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 2    // batch - Mingw - xHarbour
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 1 .and. Main.Combo_1.value == 2 .and. Main.Combo_3.value == 1   // batch - Mingw - xHarbour
            ook_xmingw_bat()
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 2    // batch - Borland - xHarbour
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 2 .and. Main.Combo_1.value == 2 .and. Main.Combo_3.value == 1   // batch - Borland - xHarbour
            ook_xbcc_bat()
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 2    // batch - Pelles - xHarbour
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 3 .and. Main.Combo_1.value == 2 .and. Main.Combo_3.value == 1   // batch - Pelles - xHarbour
            ook_xpocc_bat()
-      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 2    // batch - msvc - xHarbour
+      Case Main.Combo_Mode.value == 2 .and. Main.Combo_2.value == 4 .and. Main.Combo_1.value == 2 .and. Main.Combo_3.value == 1   // batch - msvc - xHarbour
            ook_xmsvc_bat()
+
+      Case Main.Combo_3.value == 2 .and. Main.Combo_Bits.value == 1 .and. Main.Combo_2.value == 1  // batch - Mingw - Harbour - x32
+           ook_mk2_hmg1()
+      Case Main.Combo_3.value == 2 .and. Main.Combo_Bits.value == 2 .and. Main.Combo_2.value == 1  // batch - Mingw - Harbour - x64
+           ook_mk2_hmg3()
    EndCase
 
 Return
