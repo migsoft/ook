@@ -211,7 +211,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
      DEFINE LABEL Label_8
             ROW    270
             COL    40
-            WIDTH  220
+            WIDTH  260
             HEIGHT 18
             VALUE cCComp
             FONTNAME "Courier New"
@@ -221,7 +221,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
      DEFINE LABEL Label_9
             ROW    290
             COL    40
-            WIDTH  220
+            WIDTH  260
             HEIGHT 18
             VALUE cHbVer
             FONTNAME "Courier New"
@@ -231,7 +231,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
      DEFINE LABEL Label_10
             ROW    310
             COL    40
-            WIDTH  220
+            WIDTH  260
             HEIGHT 18
             VALUE cOsSys
             FONTNAME "Courier New"
@@ -241,7 +241,7 @@ DEFINE WINDOW TEMPLATE AT 184 , 444 WIDTH 550 HEIGHT 391 TITLE "(c)2019 Batch Ge
      DEFINE LABEL Label_11
             ROW    250
             COL    40
-            WIDTH  220
+            WIDTH  260
             HEIGHT 18
             VALUE cGuiVer
             FONTNAME "Courier New"
